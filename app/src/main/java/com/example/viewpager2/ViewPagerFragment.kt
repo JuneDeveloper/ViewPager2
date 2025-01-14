@@ -22,7 +22,7 @@ class ViewPagerFragment : Fragment() {
         val namePagerTV: TextView = view.findViewById(R.id.namePagerTV)
         val authorPagerTV:TextView = view.findViewById(R.id.authorTV)
         val viewPagerIV:ImageView = view.findViewById(R.id.viewPagerIV)
-        val viewPagerItem = arguments?.getSerializable("vp") as Model
+        val viewPagerItem = arguments?.getSerializable("vp") as Picture
         namePagerTV.text = viewPagerItem.name
         authorPagerTV.text = viewPagerItem.author
         viewPagerIV.setImageResource(viewPagerItem.imageView)
